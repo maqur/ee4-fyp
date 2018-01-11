@@ -10,16 +10,16 @@ VARIABLES   state       \* A record with each cells as a fields whose
                         \* elements are a record with fields cs, ns, t
                         
 \* Check for two way neighbours
-NeighbourOK ==  \A c in CELLS :
-                        \A n in NEIGHBOURS.c : c \in NEIGHBOURS.n
+NeighbourOK ==  \A c \in CELLS :
+                        \A n \in NEIGHBOURS.c : c \in NEIGHBOURS.n
                     
 \* Check the time difference is never greater than 1
-TimeDiffOK ==   \A c in CELLS :
-                        \A n in NEIGHBOURS.c :
+TimeDiffOK ==   \A c \in CELLS :
+                        \A n \in NEIGHBOURS.c :
                                 /\ state.c.t - state.n.t < 2
-                                /\ state.c.t - state.n.t > -2
+                                /\ state.c.t - state.n.t > 0-2
                                 
-TypeOK ==   /\ \A c in CELLS : 
+TypeOK ==   /\ \A c \in CELLS : 
                     /\ state.c.t <= MAXTIME
                     /\ state.c.cs <= Cardinality(NEIGHBOURS.c)
                     /\ state.c.ns <= Cardinality(NEIGHBOURS.c)
@@ -49,5 +49,5 @@ GSSpec == GSInit /\ [][GSNext]_<<state>>
                     
 =============================================================================
 \* Modification History
-\* Last modified Thu Jan 11 10:44:06 GMT 2018 by affan
+\* Last modified Thu Jan 11 11:18:17 GMT 2018 by affan
 \* Created Mon Jan 08 11:40:06 GMT 2018 by affan
