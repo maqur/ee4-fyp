@@ -42,8 +42,27 @@ Next(n) ==  /\ state[n].t < MAXTIME
                         
 GINext  ==  \E n \in 1..NEURONS : Next(n)
 
-GISpec  ==  GIInit /\ [][GINext]_<<state>>                          
+GISpec  ==  GIInit /\ [][GINext]_<<state>> 
+
+
+NeighbourOK ==  \A n \in 1..NEURONS :
+                    /\ \A i \in IN_NEIGHBOURS[n] : n \in OUT_NEIGHBOURS[i]
+                    /\ \A o \in OUT_NEIGHBOURS[n] : n \in IN_NEIGHBOURS[o]
+
+TimeDiffOK  ==  \A n \in 1..NEURONS :
+                    /\ \A i \in IN_NEIGHBOURS[n]:
+                        /\ state[n].t - state[i].t < 2
+                        /\ state[n].t - state[i].t > -2     
+                    /\ \A o \in OUT_NEIGHBOURS[n]:
+                        /\ state[n].t - state[o].t < 2
+                        /\ state[n].t - state[o].t > -2
+                        
+TypeOK  ==  /\  \A n \in 1..NEURONS :
+                    /\ state[n].t <= MAXTIME
+                    /\ state[n].c <= Cardinality(IN_NEIGHBOURS[n])
+            /\  NeighbourOK
+            /\  TimeDiffOK
 =============================================================================
 \* Modification History
-\* Last modified Thu Feb 08 23:19:52 UTC 2018 by affan
+\* Last modified Fri Feb 09 12:32:32 UTC 2018 by affan
 \* Created Thu Feb 08 19:33:04 UTC 2018 by affan
