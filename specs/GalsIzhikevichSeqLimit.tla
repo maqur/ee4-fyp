@@ -1,4 +1,4 @@
---------------------------- MODULE GalsIzhikevichSeq ---------------------------
+----------------------- MODULE GalsIzhikevichSeqLimit -----------------------
 
 EXTENDS FiniteSets, Integers, Sequences
 
@@ -6,7 +6,8 @@ CONSTANTS   NEURONS,
             IN_NEIGHBOURS, 
             OUT_NEIGHBOURS, 
             MAXTIME,
-            MAX_SEQ
+            MAX_SEQ,
+            K \* The maximum sequence size
 
 VARIABLES   state
 
@@ -29,6 +30,8 @@ GIInit  ==  state = [ n \in 1..NEURONS |->
 Next(n) ==  /\ state[n].t < MAXTIME
             /\ Len(state[n].c) > 0
             /\ state[n].c[1] = Cardinality(IN_NEIGHBOURS[n])
+            /\ \A o \in OUT_NEIGHBOURS[n]:
+                    state[n].t - state[o].t < K -1
             /\ state' = [ a \in 1..NEURONS |->
                             IF a = n THEN
                                 [   t |-> state[a].t + 1,
@@ -67,7 +70,8 @@ TypeOK  ==  /\  \A n \in 1..NEURONS :
                             
 MaxSeqSize  ==  \A n \in 1..NEURONS :
                     Len(state[n].c) <= MAX_SEQ
+
 =============================================================================
 \* Modification History
-\* Last modified Thu Mar 01 17:22:52 UTC 2018 by affan
-\* Created Thu Feb 08 19:33:04 UTC 2018 by affan
+\* Last modified Thu Mar 01 23:57:14 UTC 2018 by affan
+\* Created Thu Mar 01 23:44:09 UTC 2018 by affan
