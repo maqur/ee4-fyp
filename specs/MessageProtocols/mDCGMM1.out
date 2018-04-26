@@ -1,0 +1,920 @@
+TLC2 Version 2.12 of 29 January 2018
+Running breadth-first search Model-Checking with 8 workers on 8 cores with 1595MB heap and 64MB offheap memory (Linux 4.13.0-1012-gcp amd64, Oracle Corporation 1.8.0_162 x86_64).
+Parsing file /home/affan/fyp/specs/MessageProtocols/mDCGMM.tla
+Parsing file /home/affan/fyp/specs/MessageProtocols/DirectedCyclicGraphMaxMem.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/TLC.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/FiniteSets.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/Integers.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/Sequences.tla
+Parsing file /home/affan/fyp/specs/MessageProtocols/RandomOrderMessages.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/Naturals.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module Integers
+Semantic processing of module RandomOrderMessages
+Semantic processing of module DirectedCyclicGraphMaxMem
+Semantic processing of module TLC
+Semantic processing of module mDCGMM
+Starting... (2018-04-26 21:55:02)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated.
+Progress(16) at 2018-04-26 21:55:05: 853899 states generated (853,899 s/min), 129264 distinct states found (129,264 ds/min), 34096 states left on queue.
+Progress(35) at 2018-04-26 21:56:05: 37222547 states generated (36,368,648 s/min), 4809881 distinct states found (4,680,617 ds/min), 992165 states left on queue.
+Progress(37) at 2018-04-26 21:57:05: 73681358 states generated (36,458,811 s/min), 9200690 distinct states found (4,390,809 ds/min), 2137047 states left on queue.
+Progress(39) at 2018-04-26 21:58:05: 109708772 states generated (36,027,414 s/min), 13404830 distinct states found (4,204,140 ds/min), 3126981 states left on queue.
+Progress(39) at 2018-04-26 21:59:05: 143411838 states generated (33,703,066 s/min), 17266645 distinct states found (3,861,815 ds/min), 4077201 states left on queue.
+Progress(40) at 2018-04-26 22:00:05: 172252990 states generated (28,841,152 s/min), 20514586 distinct states found (3,247,941 ds/min), 4782727 states left on queue.
+Progress(41) at 2018-04-26 22:01:05: 201586398 states generated (29,333,408 s/min), 23723089 distinct states found (3,208,503 ds/min), 5411746 states left on queue.
+Progress(41) at 2018-04-26 22:02:05: 231688444 states generated (30,102,046 s/min), 26871919 distinct states found (3,148,830 ds/min), 5907473 states left on queue.
+Progress(42) at 2018-04-26 22:03:05: 261733455 states generated (30,045,011 s/min), 30014953 distinct states found (3,143,034 ds/min), 6353504 states left on queue.
+Progress(42) at 2018-04-26 22:04:05: 291850587 states generated (30,117,132 s/min), 33115121 distinct states found (3,100,168 ds/min), 6777139 states left on queue.
+Progress(43) at 2018-04-26 22:05:05: 320808629 states generated (28,958,042 s/min), 36061540 distinct states found (2,946,419 ds/min), 7182777 states left on queue.
+Progress(43) at 2018-04-26 22:06:05: 350365916 states generated (29,557,287 s/min), 39224637 distinct states found (3,163,097 ds/min), 7603072 states left on queue.
+Progress(43) at 2018-04-26 22:07:05: 380769159 states generated (30,403,243 s/min), 42319475 distinct states found (3,094,838 ds/min), 8066323 states left on queue.
+Progress(44) at 2018-04-26 22:08:05: 410604552 states generated (29,835,393 s/min), 45418540 distinct states found (3,099,065 ds/min), 8528467 states left on queue.
+Progress(44) at 2018-04-26 22:09:05: 440211195 states generated (29,606,643 s/min), 48508541 distinct states found (3,090,001 ds/min), 8993433 states left on queue.
+Progress(44) at 2018-04-26 22:10:05: 468631845 states generated (28,420,650 s/min), 51317534 distinct states found (2,808,993 ds/min), 9385013 states left on queue.
+Progress(45) at 2018-04-26 22:11:05: 499017349 states generated (30,385,504 s/min), 54276640 distinct states found (2,959,106 ds/min), 9780278 states left on queue.
+Progress(45) at 2018-04-26 22:12:05: 528945009 states generated (29,927,660 s/min), 57355607 distinct states found (3,078,967 ds/min), 10164103 states left on queue.
+Progress(45) at 2018-04-26 22:13:05: 559402471 states generated (30,457,462 s/min), 60301131 distinct states found (2,945,524 ds/min), 10470085 states left on queue.
+Progress(45) at 2018-04-26 22:14:05: 590039804 states generated (30,637,333 s/min), 63144126 distinct states found (2,842,995 ds/min), 10701874 states left on queue.
+Progress(46) at 2018-04-26 22:15:05: 620629521 states generated (30,589,717 s/min), 66116520 distinct states found (2,972,394 ds/min), 10955642 states left on queue.
+Progress(46) at 2018-04-26 22:16:05: 649237716 states generated (28,608,195 s/min), 68826973 distinct states found (2,710,453 ds/min), 11085135 states left on queue.
+Progress(46) at 2018-04-26 22:17:05: 680299219 states generated (31,061,503 s/min), 71650691 distinct states found (2,823,718 ds/min), 11168146 states left on queue.
+Progress(46) at 2018-04-26 22:18:05: 711328590 states generated (31,029,371 s/min), 74445679 distinct states found (2,794,988 ds/min), 11251225 states left on queue.
+Progress(47) at 2018-04-26 22:19:05: 742206897 states generated (30,878,307 s/min), 77321151 distinct states found (2,875,472 ds/min), 11308916 states left on queue.
+Progress(47) at 2018-04-26 22:20:05: 773151097 states generated (30,944,200 s/min), 80190592 distinct states found (2,869,441 ds/min), 11323563 states left on queue.
+Progress(47) at 2018-04-26 22:21:05: 804495796 states generated (31,344,699 s/min), 82990698 distinct states found (2,800,106 ds/min), 11320641 states left on queue.
+Progress(47) at 2018-04-26 22:22:05: 833059223 states generated (28,563,427 s/min), 85523775 distinct states found (2,533,077 ds/min), 11318184 states left on queue.
+Progress(48) at 2018-04-26 22:23:05: 863726271 states generated (30,667,048 s/min), 88327017 distinct states found (2,803,242 ds/min), 11316018 states left on queue.
+Progress(48) at 2018-04-26 22:24:05: 894588133 states generated (30,861,862 s/min), 91187055 distinct states found (2,860,038 ds/min), 11318049 states left on queue.
+Checkpointing of run states/18-04-26-21-55-02
+Checkpointing completed at (2018-04-26 22:25:05)
+Progress(48) at 2018-04-26 22:25:05: 925765385 states generated (31,177,252 s/min), 93996587 distinct states found (2,809,532 ds/min), 11328599 states left on queue.
+Progress(48) at 2018-04-26 22:26:05: 956896410 states generated (31,131,025 s/min), 96703027 distinct states found (2,706,440 ds/min), 11329516 states left on queue.
+Progress(49) at 2018-04-26 22:27:05: 987947165 states generated (31,050,755 s/min), 99482324 distinct states found (2,779,297 ds/min), 11308619 states left on queue.
+Progress(49) at 2018-04-26 22:28:05: 1014617885 states generated (26,670,720 s/min), 101910901 distinct states found (2,428,577 ds/min), 11318848 states left on queue.
+Progress(49) at 2018-04-26 22:29:05: 1045675287 states generated (31,057,402 s/min), 104692497 distinct states found (2,781,596 ds/min), 11312887 states left on queue.
+Progress(49) at 2018-04-26 22:30:05: 1077341204 states generated (31,665,917 s/min), 107374139 distinct states found (2,681,642 ds/min), 11239161 states left on queue.
+Progress(50) at 2018-04-26 22:31:05: 1109611710 states generated (32,270,506 s/min), 110034347 distinct states found (2,660,208 ds/min), 11123213 states left on queue.
+Progress(50) at 2018-04-26 22:32:05: 1141044066 states generated (31,432,356 s/min), 112793408 distinct states found (2,759,061 ds/min), 10974377 states left on queue.
+Progress(50) at 2018-04-26 22:33:05: 1173061671 states generated (32,017,605 s/min), 115468948 distinct states found (2,675,540 ds/min), 10765346 states left on queue.
+Progress(50) at 2018-04-26 22:34:05: 1200958667 states generated (27,896,996 s/min), 117643176 distinct states found (2,174,228 ds/min), 10473007 states left on queue.
+Progress(51) at 2018-04-26 22:35:05: 1233804750 states generated (32,846,083 s/min), 120173395 distinct states found (2,530,219 ds/min), 10072159 states left on queue.
+Progress(51) at 2018-04-26 22:36:05: 1266516349 states generated (32,711,599 s/min), 122814231 distinct states found (2,640,836 ds/min), 9602517 states left on queue.
+Progress(51) at 2018-04-26 22:37:05: 1300740673 states generated (34,224,324 s/min), 125246805 distinct states found (2,432,574 ds/min), 8843628 states left on queue.
+Progress(51) at 2018-04-26 22:38:05: 1335202948 states generated (34,462,275 s/min), 127618732 distinct states found (2,371,927 ds/min), 8010164 states left on queue.
+Progress(52) at 2018-04-26 22:39:05: 1367781473 states generated (32,578,525 s/min), 130070728 distinct states found (2,451,996 ds/min), 7132042 states left on queue.
+Progress(52) at 2018-04-26 22:40:05: 1401745727 states generated (33,964,254 s/min), 132271440 distinct states found (2,200,712 ds/min), 5899550 states left on queue.
+Progress(53) at 2018-04-26 22:41:06: 1432274044 states generated (30,528,317 s/min), 134221028 distinct states found (1,949,588 ds/min), 4571860 states left on queue.
+Progress(54) at 2018-04-26 22:42:06: 1465523554 states generated (33,249,510 s/min), 136164562 distinct states found (1,943,534 ds/min), 2759409 states left on queue.
+Error: Deadlock reached.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ state = << [t |-> 0, c |-> <<2, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 0)],
+   [t |-> 0, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 0, c |-> <<2, 0>>, tDiff |-> <<0, 0>>],
+   [t |-> 0, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 0)] >>
+/\ messages = {}
+
+State 2: <Fire line 25, col 13 to line 50, col 17 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 0, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 0, c |-> <<2, 0>>, tDiff |-> <<0, 0>>],
+   [t |-> 0, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] }
+
+State 3: <Fire line 25, col 13 to line 50, col 17 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 0, c |-> <<2, 0>>, tDiff |-> <<0, 0>>],
+   [t |-> 0, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 2, out |-> 1],
+  [t |-> 1, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] }
+
+State 4: <Fire line 25, col 13 to line 50, col 17 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 0, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 2, out |-> 1],
+  [t |-> 1, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4] }
+
+State 5: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 0, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 2, out |-> 1],
+  [t |-> 1, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4] }
+
+State 6: <Fire line 25, col 13 to line 50, col 17 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<0, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 2, out |-> 1],
+  [t |-> 1, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 7: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<0, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 8: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 9: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 10: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 11: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<1, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 12: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 13: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 14: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 15: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> <<0, 1>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 16: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> <<0, 0>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 17: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<2, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> <<0, 0>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 18: <Fire line 25, col 13 to line 50, col 17 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<2, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4] }
+
+State 19: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<2, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4] }
+
+State 20: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 1, c |-> <<2, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 0)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4] }
+
+State 21: <Fire line 25, col 13 to line 50, col 17 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4] }
+
+State 22: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4] }
+
+State 23: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4] }
+
+State 24: <Fire line 25, col 13 to line 50, col 17 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 2, c |-> <<0, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 25: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 2, c |-> <<0, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 26: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 27: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 1>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 28: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 2>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 29: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 2>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 30: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 2>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 31: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 2>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> <<0, 1>>],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 32: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 2>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> <<0, 1>>],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 33: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<2, 2>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> <<0, 1>>],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 34: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 0)],
+   [t |-> 1, c |-> <<2, 2>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> <<0, 1>>],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 35: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 0)],
+   [t |-> 1, c |-> <<2, 2>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> <<0, 1>>],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = {[t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2]}
+
+State 36: <Fire line 25, col 13 to line 50, col 17 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<1, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> <<0, 1>>],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 2, type |-> "fire", sender |-> 2, out |-> 1],
+  [t |-> 2, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 37: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 2, c |-> <<2, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> <<0, 1>>],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 2, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 38: <Fire line 25, col 13 to line 50, col 17 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> <<0, 1>>],
+   [t |-> 2, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 2, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3] }
+
+State 39: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> <<0, 1>>],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3] }
+
+State 40: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> <<0, 0>>],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3] }
+
+State 41: <Fire line 25, col 13 to line 50, col 17 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<0, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4] }
+
+State 42: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<0, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4] }
+
+State 43: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4] }
+
+State 44: <Fire line 25, col 13 to line 50, col 17 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 3, c |-> <<0, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 45: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 3, c |-> <<0, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 46: <Fire line 25, col 13 to line 50, col 17 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<0, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 3, c |-> <<0, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 2, out |-> 1],
+  [t |-> 3, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 47: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 3, c |-> <<0, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 48: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 3, c |-> <<0, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "fire", sender |-> 1, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 49: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<1, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 50: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 51: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "fire", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 52: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "fire", sender |-> 4, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 53: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 54: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> <<1, 1>>],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 55: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> <<1, 0>>],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (2 :> 1 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 56: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<2, 0>>, tDiff |-> (3 :> 1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> <<1, 0>>],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 57: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<2, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> <<1, 0>>],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 2] }
+
+State 58: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<2, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> <<1, 0>>],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1] }
+
+State 59: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<2, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> <<1, 0>>],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 0)] >>
+/\ messages = { [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 1] }
+
+State 60: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<2, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> <<1, 0>>],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 0)] >>
+/\ messages = {[t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3]}
+
+State 61: <DCGNext line 68, col 16 to line 68, col 45 of module DirectedCyclicGraphMaxMem>
+/\ state = << [t |-> 3, c |-> <<2, 0>>, tDiff |-> (3 :> 0 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> <<0, 0>>],
+   [t |-> 3, c |-> <<2, 0>>, tDiff |-> (2 :> 0 @@ 3 :> 0)] >>
+/\ messages = {}
+
+1498270533 states generated, 137848385 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 61.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 16 and the 95th percentile is 4).
+Finished in 48min 01s at (2018-04-26 22:43:03)
