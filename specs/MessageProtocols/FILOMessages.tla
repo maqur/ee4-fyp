@@ -4,12 +4,12 @@ EXTENDS     FiniteSets, Integers, Sequences
 
 InitMsg ==  <<>>
 
-SendMsg(msgQueue, msg) ==   Append(msgQueue, msg)   
+SendMsg(msgQueue, msg) ==   <<msg>> \o msgQueue   
 
 MsgAvailable(msgQueue) == 
         Len(msgQueue) > 0 /\ Cardinality(Head(msgQueue)) > 0
 
-GetMsg(msgQueue) == CHOOSE m \in Head(msgQueue) : TRUE
+GetMsg(msgQueue) == {CHOOSE m \in Head(msgQueue) : TRUE}
 
 RemoveMsg(msgQueue, msg) == 
         IF msg \in Head(msgQueue) THEN

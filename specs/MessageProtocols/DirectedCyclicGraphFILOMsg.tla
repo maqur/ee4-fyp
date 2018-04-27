@@ -67,7 +67,7 @@ Receive(m) ==   \/  /\  m.type = "fire"
 
 DCGNext ==  \/  \E n \in 1..Nodes : Fire(n)                                    
             \/  /\ MsgAvailable(messages)
-                /\ Receive(GetMsg(messages))
+                /\ \E m \in GetMsg(messages) : Receive(m)
 
 -----------------------------------------------------------------------------
 
