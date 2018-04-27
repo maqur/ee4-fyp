@@ -1,12 +1,15 @@
 ---- MODULE RandomOrderMessages ----
 
-VARIABLE    messages
+EXTENDS     FiniteSets, Integers
 
-MsgInit ==  messages = {}
+InitMsg ==  {}
 
-SendMsg(m) ==   messages' = messages \cup m   
+SendMsg(msgQueue, msg) ==   msgQueue \cup msg   
 
-GetMsg(m) ==    messages' = messages \ {m}      
+MsgAvailable(msgQueue) ==   Cardinality(msgQueue) > 0
 
+GetMsg(msgQueue) == CHOOSE m \in msgQueue : TRUE
+
+RemoveMsg(msgQueue, msg) == msgQueue \ {msg}
 
 ====
