@@ -7,8 +7,7 @@ InitMsg ==  <<>>
 SendMsg(msgQueue, msg) ==   Append(msgQueue, msg)   
 
 MsgAvailable(msgQueue) == 
-        IF Len(msgQueue) > 0 /\ Cardinality(Head(msgQueue)) > 0
-        THEN TRUE ELSE FALSE
+        Len(msgQueue) > 0 /\ Cardinality(Head(msgQueue)) > 0
 
 GetMsg(msgQueue) == CHOOSE m \in Head(msgQueue) : TRUE
 
