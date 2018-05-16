@@ -12,7 +12,7 @@ VARIABLE    state,
             messages
 
 DCGInit ==  /\  messages = InitMsg  
-            /\  state = [ n \in 1..Nodes |-> [                                
+            /\  state = [ n \in 1..Nodes |-> [     
                     t |-> 0,                                                    
                     c |-> [m \in 1..MaxMem |->                               
                         IF m = 1 THEN Cardinality(InNeighbours[n]) ELSE 0       
