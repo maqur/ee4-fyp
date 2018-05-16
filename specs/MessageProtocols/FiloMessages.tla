@@ -1,10 +1,10 @@
----- MODULE FILOMessages ----
+---- MODULE FiloMessages ----
 
-EXTENDS     FiniteSets, Integers, Sequences
+EXTENDS FiniteSets, Integers, Sequences
 
-InitMsg ==  <<>>
+InitMsg == <<>>
 
-SendMsg(msgQueue, msg) ==   <<msg>> \o msgQueue   
+SendMsg(msgQueue, msg) == <<msg>> \o msgQueue   
 
 MsgAvailable(msgQueue) == 
         Len(msgQueue) > 0 /\ Cardinality(Head(msgQueue)) > 0
