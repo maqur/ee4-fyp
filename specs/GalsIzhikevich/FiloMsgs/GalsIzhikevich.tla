@@ -77,7 +77,7 @@ NeighbourOK ==  \A n \in 1..Nodes :
 
 TypeOK  ==  /\  \A n \in 1..Nodes :                                           
                     /\ state[n].t <= MaxTime                                    
-                    /\ \A m \in 1..Nodes:                                   
+                    /\ \A m \in 1..MaxMem:                                   
                             state[n].c[m] <= Cardinality(InNeighbours[n])
 
 TimeDiffOK  ==  \A n \in 1..Nodes :                                           
