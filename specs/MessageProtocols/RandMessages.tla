@@ -4,7 +4,7 @@ EXTENDS FiniteSets, Integers
 
 InitMsg == {}
 
-SendMsg(msgQueue, msg) == msgQueue \cup msg   
+SendMsg(msgQueue, msg) == msgQueue \cup msg
 
 MsgAvailable(msgQueue) == Cardinality(msgQueue) > 0
 

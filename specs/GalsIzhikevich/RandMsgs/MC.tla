@@ -1,24 +1,23 @@
----- MODULE MC ----                                                             
+---- MODULE MC ----
 
-EXTENDS GalsIzhikevich, TLC                                               
-                                                                                
-NODES == 4                                                                        
+EXTENDS GalsIzhikevich, TLC
 
-IN_NEIGHBOURS == << {2,3}, {3,4}, {4,1}, {1,2}>>                                       
+NODES == 4
 
-OUT_NEIGHBOURS == << {3,4}, {4,1}, {1,2}, {2,3} >>                             
+IN_NEIGHBOURS == << {2,3}, {3,4}, {4,1}, {1,2}>>
 
-MAX_TIME == 5           
+OUT_NEIGHBOURS == << {3,4}, {4,1}, {1,2}, {2,3} >>
+
+MAX_TIME == 5
 
 MAX_MEM == 3
 
-init == DCGInit                                                                          
-                                                                                
-next == DCGNext                                                                          
+init == DCGInit
+
+next == DCGNext
 
 inv ==  /\ NeighbourOK
         /\ TypeOK
         /\ TimeDiffOK
-                                                                                
-============================================================================== 
 
+==============================================================================

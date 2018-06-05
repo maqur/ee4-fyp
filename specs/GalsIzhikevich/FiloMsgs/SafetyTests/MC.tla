@@ -1,27 +1,26 @@
----- MODULE MC ----                                                             
+---- MODULE MC ----
 
-EXTENDS GalsIzhikevich, TLC                                               
-                                                                                
-NODES == 6                                                                        
+EXTENDS GalsIzhikevich, TLC
 
-IN_NEIGHBOURS == << {6}, {1,6}, {2,5}, {1,3}, {1,4}, {5}>> 
+NODES == 6
 
-OUT_NEIGHBOURS == << {2,4,5}, {3}, {4}, {5}, {3,6}, {1,2} >>                             
+IN_NEIGHBOURS == << {6}, {1,6}, {2,5}, {1,3}, {1,4}, {5}>>
 
-MAX_TIME == 5           
+OUT_NEIGHBOURS == << {2,4,5}, {3}, {4}, {5}, {3,6}, {1,2} >>
+
+MAX_TIME == 5
 
 MAX_MEM == 3
 
 ART_ERROR_T == 3
 
-init == DCGInit                                                                          
-                                                                                
-next == DCGNext                                                                          
+init == DCGInit
+
+next == DCGNext
 
 inv ==  /\ NeighbourOK
         /\ TypeOK
         /\ TimeDiffOK
         /\ ArtificialError
-                                                                                
-============================================================================== 
 
+==============================================================================
