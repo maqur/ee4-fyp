@@ -87,5 +87,4 @@ TimeDiffOK  ==  \A n \in 1..Nodes :
                         /\ state[n].tDiff[o] < MaxMem
                         /\ state[n].t - state[o].t < MaxMem
 
-
 =============================================================================
