@@ -2,25 +2,20 @@
 
 EXTENDS GalsIzhikevich, TLC
 
-NODES == 6
+NODES == 5
 
-IN_NEIGHBOURS == << {6}, {1,6}, {2,5}, {1,3}, {1,4}, {5}>>
+IN_NEIGHBOURS == << {3}, {1, 4}, {2, 5}, {3}, {4} >>
 
-OUT_NEIGHBOURS == << {2,4,5}, {3}, {4}, {5}, {3,6}, {1,2} >>
+OUT_NEIGHBOURS == << {2}, {3}, {1, 4}, {2, 5}, {3} >>
 
-MAX_TIME == 15
+MAX_TIME == 10
 
 MAX_MEM == 3
 
-ART_ERROR_T == 5
+ART_ERROR_T == 3
 
 init == DCGInit
 
 next == DCGNext
 
-inv ==  /\ NeighbourOK
-        /\ TypeOK
-        /\ TimeDiffOK
-        /\ ArtificialError
-
-==============================================================================
+=============================================================================
