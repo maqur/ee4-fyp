@@ -1,34 +1,44 @@
+import numpy as np
 import random
 
-def genRandomGraphs(noOfNodes, noOfGraphs):
+def GenRandomGraphs(noOfNodes, noOfGraphs, graphDensity):
 
-    graph = [[0 for x in range(noOfNodes)] for y in range(noOfNodes)]
+    graphs = np.zeros((noOfGraphs, noOfNodes, noOfNodes), dtype=np.int8)
 
     for i in range(noOfNodes-1):
-        graph[i][i+1] = 1
+        graphs[:, i, i+1] = 1
+    
+    tmp = np.array([ 2**(-i) for i in range(1,noOfNodes)])
+    probs = tmp / np.sum(tmp)
+    cumProbs = np.cumsum(probs)
 
-    graph[noOfNodes-1][0] = 1
+    for n in range(noOfGraphs):
 
-    print(graph)
+        idx = np.digitize(random.random(), cumProbs)
+        for i in range(0,idx+1):
+            graphs[n, noOfNodes-i-1, idx-i] = 1
 
-    tmp = noOfNodes*noOfNodes - 2*noOfNodes
-    extraEdges = int(random.triangular(0, tmp, tmp/5)) 
+        emptyEdges = noOfNodes**2 - noOfNodes - idx + 1
+        extraEdges = int(
+            random.triangular(0, emptyEdges, emptyEdges*graphDensity)) 
 
-    for i in range(1,extraEdges+1):
-        idx1 = random.randrange(noOfNodes)
-        seq = []
+        for i in range(extraEdges):
 
-        for j in range(noOfNodes):
-            if j != idx1 and j != (idx1+1) % noOfNodes:
-                seq.append(j)
-        idx2 = random.choice(seq)
+            x = random.randrange(noOfNodes)
+            seq = []
 
-        graph[idx1][idx2] = 1
+            for j in range(noOfNodes):
+                if j != x and j != (x-noOfNodes+idx+1) % noOfNodes:
+                    seq.append(j)
 
-    return graph
+            y = random.choice(seq)
+
+            graphs[n, x, y] = 1
+
+    return graphs
 
 def main():
-    g = genRandomGraphs(4,1)
+    g = GenRandomGraphs(6,1,0.01)
     print(g)
 
 if __name__ == "__main__":
