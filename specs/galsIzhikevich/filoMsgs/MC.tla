@@ -2,11 +2,11 @@
 
 EXTENDS GalsIzhikevich, TLC
 
-NODES == 4
+NODES == 5
 
-IN_NEIGHBOURS == << {2,3}, {3,4}, {4,1}, {1,2}>>
+IN_NEIGHBOURS == << {3}, {1, 4}, {2, 5}, {3}, {4} >>
 
-OUT_NEIGHBOURS == << {3,4}, {4,1}, {1,2}, {2,3} >>
+OUT_NEIGHBOURS == << {2}, {3}, {1, 4}, {2, 5}, {3} >>
 
 MAX_TIME == 2
 
