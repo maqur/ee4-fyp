@@ -1,6 +1,6 @@
 ---- MODULE GalsIzhikevich ----
 
-EXTENDS     FiniteSets, Integers, Sequences, ChooseRandMsg
+EXTENDS     FiniteSets, Integers, Sequences, ChooseRandMessage
 
 CONSTANTS   Nodes,
             InNeighbours,

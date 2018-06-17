@@ -1,0 +1,1431 @@
+TLC2 Version 2.12 of 29 January 2018
+Running breadth-first search Model-Checking with 8 workers on 8 cores with 11630MB heap and 64MB offheap memory (Linux 4.13.0-1017-gcp amd64, Oracle Corporation 1.8.0_171 x86_64).
+Parsing file /home/affan/ee4-fyp_TLA/specs/galsIzhikevich/priorityNodes/MC.tla
+Parsing file /home/affan/ee4-fyp_TLA/specs/galsIzhikevich/priorityNodes/GalsIzhikevich.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/TLC.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/FiniteSets.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/Integers.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/Sequences.tla
+Parsing file /home/affan/ee4-fyp_TLA/specs/galsIzhikevich/priorityNodes/RandMessages.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/Naturals.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module Integers
+Semantic processing of module RandMessages
+Semantic processing of module GalsIzhikevich
+Semantic processing of module TLC
+Semantic processing of module MC
+Starting... (2018-06-08 13:39:44)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated.
+Progress(21) at 2018-06-08 13:39:47: 143646 states generated (143,646 s/min), 49817 distinct states found (49,817 ds/min), 12946 states left on queue.
+Progress(50) at 2018-06-08 13:40:47: 20757466 states generated (20,613,820 s/min), 5345521 distinct states found (5,295,704 ds/min), 620984 states left on queue.
+Progress(56) at 2018-06-08 13:41:47: 42328080 states generated (21,570,614 s/min), 10380239 distinct states found (5,034,718 ds/min), 1058688 states left on queue.
+Progress(59) at 2018-06-08 13:42:47: 63915986 states generated (21,587,906 s/min), 15433346 distinct states found (5,053,107 ds/min), 1443196 states left on queue.
+Progress(63) at 2018-06-08 13:43:47: 87176854 states generated (23,260,868 s/min), 20348194 distinct states found (4,914,848 ds/min), 1461518 states left on queue.
+Progress(68) at 2018-06-08 13:44:47: 112103524 states generated (24,926,670 s/min), 24956712 distinct states found (4,608,518 ds/min), 452446 states left on queue.
+Error: Deadlock reached.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ state = << [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 0, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 0, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = {}
+
+State 2: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 0, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 3: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 0, c |-> <<1, 1, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 0, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 4: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 0, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 5: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 0, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3] }
+
+State 6: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3] }
+
+State 7: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3] }
+
+State 8: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3] }
+
+State 9: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "fire", sender |-> 5, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3] }
+
+State 10: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3] }
+
+State 11: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 2 @@ 4 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 12: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 13: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 14: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 15: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 16: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3] }
+
+State 17: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 1, out |-> 3] }
+
+State 18: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 19: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 20: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 21: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 22: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 3],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 23: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 24: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 25: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 2, out |-> 3],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 26: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 27: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 28: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 29: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "fire", sender |-> 5, out |-> 3],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 30: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 2, c |-> <<2, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 31: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 32: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 33: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 1, out |-> 3] }
+
+State 34: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 35: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 36: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 37: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 38: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 39: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 40: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 4, out |-> 3],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 41: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 2)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 42: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 2)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 43: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "fire", sender |-> 5, out |-> 3],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 44: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 45: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 46: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 2, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 47: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 2, out |-> 3],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 48: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 3, c |-> <<2, 0, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2] }
+
+State 49: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 50: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 1],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 51: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 52: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 2)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 53: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 54: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 55: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 56: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 3, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 57: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 2, out |-> 3],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 58: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 1],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 59: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 1)],
+   [t |-> 3, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 60: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5] }
+
+State 61: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 5, out |-> 3],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 62: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 63: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 64: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 65: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 3, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 66: <PriorityFire line 73, col 17 to line 75, col 68 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 4, out |-> 3],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 67: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = { [t |-> 3, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 68: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 2)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 3, type |-> "confirm", sender |-> 5, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 69: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 4, type |-> "fire", sender |-> 1, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 70: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 4, type |-> "fire", sender |-> 3, out |-> 4],
+  [t |-> 4, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 71: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 4, type |-> "fire", sender |-> 4, out |-> 2],
+  [t |-> 4, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 72: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 4, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 2, out |-> 4],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 73: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 4, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 2],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 74: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = { [t |-> 4, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 3, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 75: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 1)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = { [t |-> 4, type |-> "fire", sender |-> 4, out |-> 5],
+  [t |-> 4, type |-> "confirm", sender |-> 5, out |-> 4] }
+
+State 76: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 0)],
+   [t |-> 4, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = {[t |-> 4, type |-> "fire", sender |-> 4, out |-> 5]}
+
+State 77: <PriorityRecieve line 78, col 9 to line 83, col 55 of module GalsIzhikevich>
+/\ state = << [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 4, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 0)],
+   [t |-> 4, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = {}
+
+116439917 states generated, 25496963 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 77.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 15 and the 95th percentile is 3).
+Finished in 05min 11s at (2018-06-08 13:44:55)
