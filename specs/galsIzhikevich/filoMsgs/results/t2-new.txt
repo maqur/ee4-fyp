@@ -1,0 +1,573 @@
+TLC2 Version 2.12 of 29 January 2018
+Running breadth-first search Model-Checking with 8 workers on 8 cores with 11630MB heap and 64MB offheap memory (Linux 4.13.0-1017-gcp amd64, Oracle Corporation 1.8.0_171 x86_64).
+Parsing file /home/affan/ee4-fyp_TLA/specs/galsIzhikevich/filoMsgs/MC.tla
+Parsing file /home/affan/ee4-fyp_TLA/specs/galsIzhikevich/filoMsgs/GalsIzhikevich.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/TLC.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/FiniteSets.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/Integers.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/Sequences.tla
+Parsing file /home/affan/ee4-fyp_TLA/specs/galsIzhikevich/filoMsgs/FiloMessages.tla
+Parsing file /usr/share/java/tla-tools/tla2sany/StandardModules/Naturals.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module Integers
+Semantic processing of module FiloMessages
+Semantic processing of module GalsIzhikevich
+Semantic processing of module TLC
+Semantic processing of module MC
+Starting... (2018-06-17 16:44:52)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated.
+Progress(13) at 2018-06-17 16:44:55: 239244 states generated (239,244 s/min), 218742 distinct states found (218,742 ds/min), 110304 states left on queue.
+Progress(18) at 2018-06-17 16:45:55: 7986562 states generated (7,747,318 s/min), 7061765 distinct states found (6,843,023 ds/min), 2903654 states left on queue.
+Progress(19) at 2018-06-17 16:46:55: 15794941 states generated (7,808,379 s/min), 13792096 distinct states found (6,730,331 ds/min), 5224548 states left on queue.
+Progress(21) at 2018-06-17 16:47:55: 23597762 states generated (7,802,821 s/min), 20447487 distinct states found (6,655,391 ds/min), 7321461 states left on queue.
+Progress(21) at 2018-06-17 16:48:55: 31457989 states generated (7,860,227 s/min), 27054778 distinct states found (6,607,291 ds/min), 9143007 states left on queue.
+Progress(22) at 2018-06-17 16:49:55: 39316725 states generated (7,858,736 s/min), 33586818 distinct states found (6,532,040 ds/min), 10753930 states left on queue.
+Progress(22) at 2018-06-17 16:50:55: 47211922 states generated (7,895,197 s/min), 40062791 distinct states found (6,475,973 ds/min), 12121314 states left on queue.
+Progress(22) at 2018-06-17 16:51:55: 55083734 states generated (7,871,812 s/min), 46423336 distinct states found (6,360,545 ds/min), 13252689 states left on queue.
+Progress(23) at 2018-06-17 16:52:55: 62924789 states generated (7,841,055 s/min), 52667749 distinct states found (6,244,413 ds/min), 14132563 states left on queue.
+Progress(24) at 2018-06-17 16:53:55: 70663999 states generated (7,739,210 s/min), 58735420 distinct states found (6,067,671 ds/min), 14778875 states left on queue.
+Progress(25) at 2018-06-17 16:54:55: 78175207 states generated (7,511,208 s/min), 64517462 distinct states found (5,782,042 ds/min), 15152337 states left on queue.
+Progress(25) at 2018-06-17 16:55:55: 84743373 states generated (6,568,166 s/min), 69454225 distinct states found (4,936,763 ds/min), 15237590 states left on queue.
+Progress(25) at 2018-06-17 16:56:55: 91592803 states generated (6,849,430 s/min), 74548786 distinct states found (5,094,561 ds/min), 15203138 states left on queue.
+Progress(25) at 2018-06-17 16:57:55: 98542479 states generated (6,949,676 s/min), 79590079 distinct states found (5,041,293 ds/min), 14908664 states left on queue.
+Progress(25) at 2018-06-17 16:58:55: 105572985 states generated (7,030,506 s/min), 84556555 distinct states found (4,966,476 ds/min), 14369759 states left on queue.
+Progress(26) at 2018-06-17 16:59:55: 112714167 states generated (7,141,182 s/min), 89494496 distinct states found (4,937,941 ds/min), 13600363 states left on queue.
+Progress(26) at 2018-06-17 17:00:55: 119978396 states generated (7,264,229 s/min), 94316813 distinct states found (4,822,317 ds/min), 12467379 states left on queue.
+Progress(27) at 2018-06-17 17:01:55: 127272003 states generated (7,293,607 s/min), 99029174 distinct states found (4,712,361 ds/min), 11095893 states left on queue.
+Progress(27) at 2018-06-17 17:02:55: 134909650 states generated (7,637,647 s/min), 103660940 distinct states found (4,631,766 ds/min), 9170430 states left on queue.
+Progress(28) at 2018-06-17 17:03:55: 142790463 states generated (7,880,813 s/min), 108138123 distinct states found (4,477,183 ds/min), 6702074 states left on queue.
+Progress(29) at 2018-06-17 17:04:55: 151077348 states generated (8,286,885 s/min), 112388462 distinct states found (4,250,339 ds/min), 3429716 states left on queue.
+Error: Deadlock reached.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ state = << [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 0, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 0, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = <<>>
+
+State 2: <Fire line 26, col 13 to line 51, col 17 of module GalsIzhikevich>
+/\ state = << [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 0, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = << { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 3: <Fire line 26, col 13 to line 51, col 17 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 0, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = << { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 4: <Fire line 26, col 13 to line 51, col 17 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 0)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = << { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+     [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 5: <Fire line 26, col 13 to line 51, col 17 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 0, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = << { [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+     [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+     [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+     [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 6: <Fire line 26, col 13 to line 51, col 17 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = << { [t |-> 1, type |-> "fire", sender |-> 5, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4] },
+   { [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+     [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+     [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+     [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 7: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = << {[t |-> 1, type |-> "confirm", sender |-> 5, out |-> 4]},
+   { [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+     [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+     [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+     [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 8: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 0)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = << { [t |-> 1, type |-> "fire", sender |-> 4, out |-> 2],
+     [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+     [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+     [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 9: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 0)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = << { [t |-> 1, type |-> "fire", sender |-> 4, out |-> 5],
+     [t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+     [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 10: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 0)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = << {[t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3]},
+   { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+     [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 11: <Fire line 26, col 13 to line 51, col 17 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << { [t |-> 2, type |-> "fire", sender |-> 5, out |-> 3],
+     [t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4] },
+   {[t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3]},
+   { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+     [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 12: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << {[t |-> 2, type |-> "confirm", sender |-> 5, out |-> 4]},
+   {[t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3]},
+   { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+     [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 13: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 1)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << {[t |-> 1, type |-> "confirm", sender |-> 4, out |-> 3]},
+   { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+     [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 14: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 0)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 1],
+     [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 15: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 0)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 16: <Fire line 26, col 13 to line 51, col 17 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 0)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << { [t |-> 2, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 17: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> 1 @@ 4 :> 0)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << {[t |-> 2, type |-> "confirm", sender |-> 1, out |-> 3]},
+   { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 18: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 1, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << { [t |-> 1, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 19: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 1, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 20: <Fire line 26, col 13 to line 51, col 17 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << { [t |-> 2, type |-> "fire", sender |-> 4, out |-> 2],
+     [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+     [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 3] },
+   { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 21: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 2, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << { [t |-> 2, type |-> "fire", sender |-> 4, out |-> 5],
+     [t |-> 2, type |-> "confirm", sender |-> 4, out |-> 3] },
+   { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 22: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 2, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> -1 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << {[t |-> 2, type |-> "confirm", sender |-> 4, out |-> 3]},
+   { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 23: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 2, 0>>, tDiff |-> (3 :> 1)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> -1 @@ 4 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << { [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5] },
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 24: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 2, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> -1 @@ 4 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 2)] >>
+/\ messages = << {[t |-> 1, type |-> "confirm", sender |-> 3, out |-> 5]},
+   { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 25: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<1, 2, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> -1 @@ 4 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = << { [t |-> 1, type |-> "fire", sender |-> 1, out |-> 2],
+     [t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3] },
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 26: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<2, 2, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> -1 @@ 4 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = << {[t |-> 1, type |-> "confirm", sender |-> 1, out |-> 3]},
+   { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 27: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<2, 2, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 1, c |-> <<1, 1, 0>>, tDiff |-> (1 :> -1 @@ 4 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = << { [t |-> 1, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 28: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2)],
+   [t |-> 1, c |-> <<2, 2, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 1, c |-> <<2, 1, 0>>, tDiff |-> (1 :> -1 @@ 4 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = << { [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 29: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<2, 2, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 1, c |-> <<2, 1, 0>>, tDiff |-> (1 :> -1 @@ 4 :> -1)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = <<{[t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4]}>>
+
+State 30: <Fire line 26, col 13 to line 51, col 17 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<2, 2, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = << { [t |-> 2, type |-> "fire", sender |-> 3, out |-> 1],
+     [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5] },
+   {[t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4]} >>
+
+State 31: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<2, 2, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<0, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = << { [t |-> 2, type |-> "fire", sender |-> 3, out |-> 4],
+     [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5] },
+   {[t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4]} >>
+
+State 32: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<2, 2, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = << { [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 2],
+     [t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5] },
+   {[t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4]} >>
+
+State 33: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<2, 2, 0>>, tDiff |-> (3 :> -1)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 1)] >>
+/\ messages = << {[t |-> 2, type |-> "confirm", sender |-> 3, out |-> 5]},
+   {[t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4]} >>
+
+State 34: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<2, 2, 0>>, tDiff |-> (3 :> -1)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 2 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = <<{[t |-> 1, type |-> "confirm", sender |-> 2, out |-> 4]}>>
+
+State 35: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 1, c |-> <<2, 2, 0>>, tDiff |-> (3 :> -1)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = <<>>
+
+State 36: <Fire line 26, col 13 to line 51, col 17 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 2, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = << { [t |-> 2, type |-> "fire", sender |-> 2, out |-> 3],
+     [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 37: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1)],
+   [t |-> 2, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 2, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = << { [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 1],
+     [t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4] } >>
+
+State 38: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 2, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 2, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 1 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = <<{[t |-> 2, type |-> "confirm", sender |-> 2, out |-> 4]}>>
+
+State 39: <DCGNext line 69, col 17 to line 70, col 57 of module GalsIzhikevich>
+/\ state = << [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0)],
+   [t |-> 2, c |-> <<2, 0, 0>>, tDiff |-> (3 :> 0)],
+   [t |-> 2, c |-> <<2, 0, 0>>, tDiff |-> (1 :> 0 @@ 4 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (2 :> 0 @@ 5 :> 0)],
+   [t |-> 2, c |-> <<1, 0, 0>>, tDiff |-> (3 :> 0)] >>
+/\ messages = <<>>
+
+157292387 states generated, 114860023 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 39.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 6 and the 95th percentile is 2).
+Finished in 20min 43s at (2018-06-17 17:05:36)
