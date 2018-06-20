@@ -1,4 +1,4 @@
----- MODULE GalsIzhikevich ----
+---- MODULE GalsIzhikevichPriority ----
 
 EXTENDS     FiniteSets, Integers, Sequences, RandMessages
 

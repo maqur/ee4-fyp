@@ -33,9 +33,10 @@ Next(n) ==  /\ state[n].t < MaxTime
             /\ state' =
                 [ a \in 1..Neurons |->
                     IF a = n THEN
-                        [   t |-> state[a].t + 1,
-                            p |-> state[a].p - 1,
-                            c |-> 0
+                        [   state[a] EXCEPT
+                                !.t = @ + 1,
+                                !.p = @ - 1,
+                                !.c = 0
                         ]
                     ELSE IF a \in OutNeighbours[n] THEN
                         (*********)
